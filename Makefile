@@ -139,3 +139,10 @@ clean:
 dist_clean: clean
 	rm -rf src/ext/cpputil
 	rm -rf src/ext/x64asm
+
+##### PUSH
+
+push: all
+	cd ~/src && tar -czf /tmp/stoke.tar.gz stoke/
+	scp /tmp/stoke.tar.gz "salmon:~"
+	ssh salmon tar -xf stoke.tar.gz
