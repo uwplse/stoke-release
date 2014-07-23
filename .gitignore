@@ -1,0 +1,5 @@
+bin/*
+*.o
+*.so
+src/ext/cpputil
+src/ext/x64asm
